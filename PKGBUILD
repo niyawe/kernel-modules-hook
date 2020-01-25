@@ -20,4 +20,5 @@ package() {
     install -Dm644 'kernel-modules-backup-post.hook' "${pkgdir}/usr/share/libalpm/hooks/kernel-modules-backup-post.hook"
     install -Dm755 'kernel-modules-backup-pre.sh' "${pkgdir}/usr/share/kernel-backup-hooks/kernel-modules-backup-pre.sh"
     install -Dm755 'kernel-modules-backup-post.sh' "${pkgdir}/usr/share/kernel-backup-hooks/kernel-modules-backup-post.sh"
+    install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
