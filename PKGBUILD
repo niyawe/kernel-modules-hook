@@ -18,6 +18,6 @@ sha256sums=('e8005cc0b808698cf1fa1ff4676299cea49d15e802c6fac992895ea82f46fdde'
 package() {
     install -Dm644 'kernel-modules-backup-pre.hook' "${pkgdir}/usr/share/libalpm/hooks/kernel-modules-backup-pre.hook"
     install -Dm644 'kernel-modules-backup-post.hook' "${pkgdir}/usr/share/libalpm/hooks/kernel-modules-backup-post.hook"
-    install -Dm644 'kernel-modules-backup-pre.sh' "${pkgdir}/usr/share/kernel-backup-hooks/kernel-modules-backup-pre.sh"
-    install -Dm644 'kernel-modules-backup-post.sh' "${pkgdir}/usr/share/kernel-backup-hooks/kernel-modules-backup-post.sh"
+    install -Dm755 'kernel-modules-backup-pre.sh' "${pkgdir}/usr/share/kernel-backup-hooks/kernel-modules-backup-pre.sh"
+    install -Dm755 'kernel-modules-backup-post.sh' "${pkgdir}/usr/share/kernel-backup-hooks/kernel-modules-backup-post.sh"
 }
