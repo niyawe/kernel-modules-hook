@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = linux
+
+[Action]
+Description = Save Linux kernel modules
+When = PreTransaction
+Depends = coreutils
+Depends = util-linux
+Exec = /usr/share/kernel-backup-hooks/kernel-modules-backup-pre.sh
