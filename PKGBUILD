@@ -1,5 +1,5 @@
 # Maintainer: Niklas Yann Wettengel <aur@niyawe.de>
-pkgname=kernel-modules-hook
+pkgname=kernel-modules-backup-hook
 pkgver=0.1
 pkgrel=0
 pkgdesc="Keeps your system fully functional after a kernel upgrade"
